@@ -48,7 +48,7 @@ if not len(sys.argv) == 4:
 
 cipher = AESCipher(sys.argv[1])
 data= ""
-input_file = sys.argv[1]
+input_file = sys.argv[3]
 with open(input_file, 'r') as myfile:
 	data=myfile.read().replace('\n', '')
 enc_input = data
